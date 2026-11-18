@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 (1). Halaman menu pengaturan 3</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="app-container sidebar-open" id="appContainer">
+    <header class="top-header centered-title">
+      <h1>Halo, Mahasiswa</h1>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <button class="hamburger-btn" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-list">
+        <a href="dashboard1.html" class="nav-btn">Beranda</a>
+        <a href="tugas1.html" class="nav-btn">Tugas</a>
+        <a href="jadwal1.html" class="nav-btn">Jadwal</a>
+        <a href="kalender1.html" class="nav-btn">Kalender</a>
+        <a href="pengaturan1.html" class="nav-btn active">Pengaturan</a>
+      </nav>
+    </aside>
+
+    <div class="sub-header">
+      <h2>Ganti Password</h2>
+    </div>
+
+    <main class="main-content">
+      <div class="password-layout">
+        <div class="password-fields-col">
+          <div class="rect-field-group">
+            <label>Nama</label>
+            <input type="text" class="rect-input" id="passNama" />
+          </div>
+          <div class="rect-field-group">
+            <label>Password Baru</label>
+            <input type="password" class="rect-input" id="passBaru" />
+          </div>
+          <div class="rect-field-group">
+            <label>Konfirmasi Password</label>
+            <input type="password" class="rect-input" id="passKonfirmasi" />
+          </div>
+        </div>
+
+        <a href="pengaturan1.html" class="btn-pill" id="btnSelesaiProfile">Simpan</a>
+      </div>
+    </main>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

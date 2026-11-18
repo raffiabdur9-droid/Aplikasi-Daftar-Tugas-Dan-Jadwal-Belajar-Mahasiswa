@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 (1). Halaman menu tugas 1</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="app-container sidebar-open" id="appContainer">
+    <header class="top-header centered-title">
+      <h1>Halo, Mahasiswa</h1>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <button class="hamburger-btn" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-list">
+        <a href="dashboard1.html" class="nav-btn">Beranda</a>
+        <a href="tugas1.html" class="nav-btn active">Tugas</a>
+        <a href="jadwal1.html" class="nav-btn">Jadwal</a>
+        <a href="kalender.html" class="nav-btn">Kalender</a>
+        <a href="pengaturan1.html" class="nav-btn">Pengaturan</a>
+      </nav>
+    </aside>
+
+    <div class="sub-header">
+      <h2>Daftar Tugas</h2>
+    </div>
+
+    <main class="main-content">
+      <table class="tugas-table">
+        <thead>
+          <tr>
+            <th>Nama Tugas</th>
+            <th>Mata Kuliah</th>
+            <th>Deadline</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="tugasTableBody">
+          <tr>
+            <td><a href="tugas2.html" class="task-link">Praktikum 01</a></td>
+            <td>IF104 - Dasar Pemrogarman</td>
+            <td>05 Okt 2026</td>
+            <td>Selesai</td>
+          </tr>
+          <tr>
+            <td><a href="tugas2.html" class="task-link">Laporan 01</a></td>
+            <td>IF104 - Dasar Pemrogarman</td>
+            <td>05 Okt 2026</td>
+            <td>Selesai</td>
+          </tr>
+          <tr>
+            <td><a href="tugas2.html" class="task-link">Praktikum 02</a></td>
+            <td>IF105 - Sistem Komputer</td>
+            <td>07 Okt 2026</td>
+            <td>Belum Selesai</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="center-btn-wrap">
+        <a href="tugas2.html" class="btn-square">+ Tambah Tugas</a>
+      </div>
+    </main>
+  </div>
+  <script src="js.js"></script>
+</body>
+</html>

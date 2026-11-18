@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3 Dashboard</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="app-container" id="appContainer">
+    <header class="top-header" id="topHeader">
+      <h1>Halo, Mahasiswa</h1>
+
+      <div class="header-actions" id="berandaHeaderActions">
+        <div class="search-box">
+          <input type="text" id="searchInput" />
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.2">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <line x1="15.5" y1="15.5" x2="21" y2="21"></line>
+          </svg>
+        </div>
+
+        <a href="pengaturan1.html" class="profile-icon-btn" title="Profil">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="#ffffff">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+          </svg>
+        </a>
+
+        <button class="hamburger-btn" id="openMenuBtn" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-top">
+        <button class="hamburger-btn" id="closeMenuBtn" title="Tutup Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-list">
+        <a href="dashboard1.html" class="nav-btn active">Beranda</a>
+        <a href="tugas1.html" class="nav-btn">Tugas</a>
+        <a href="jadwal1.html" class="nav-btn">Jadwal</a>
+        <a href="kalender.html" class="nav-btn">Kalender</a>
+        <a href="pengaturan1.html" class="nav-btn">Pengaturan</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div class="stats-grid">
+        <div class="stat-group">
+          <h3>Total Tugas</h3>
+          <div class="stat-card">
+            <div class="big-num">03</div>
+            <div class="sub-text">1 belum selesai</div>
+          </div>
+        </div>
+
+        <div class="stat-group">
+          <h3>Tugas Selesai</h3>
+          <div class="stat-card">
+            <div class="big-num">02</div>
+            <div class="sub-text">dari 3 tugas</div>
+          </div>
+        </div>
+
+        <div class="stat-group">
+          <h3>Jadwal Hari Ini</h3>
+          <div class="stat-card">
+            <div class="big-num">03</div>
+            <div class="sub-text">mata kuliah</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-grid">
+        <div class="task-box">
+          <div class="task-box-header">
+            <h3>Tugas Mendatang</h3>
+            <a href="tugas1.html">Lihat Semua</a>
+          </div>
+          <div class="task-item-row" data-title="Praktikum 02">
+            <div class="dot"></div>
+            <div class="task-item-info">
+              <div class="title">Praktikum 02</div>
+              <div class="deadline">Deadline : 07 Okt 2026</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="task-box">
+          <div class="task-box-header">
+            <h3>Tugas Selesai</h3>
+            <a href="tugas1.html">Lihat Semua</a>
+          </div>
+          <div class="task-item-row" data-title="Praktikum 01">
+            <div class="dot"></div>
+            <div class="task-item-info">
+              <div class="title">Praktikum 01</div>
+              <div class="deadline">Deadline : 05 Okt 2026</div>
+            </div>
+          </div>
+          <div class="task-item-row" data-title="Laporan 01">
+            <div class="dot"></div>
+            <div class="task-item-info">
+              <div class="title">Laporan 01</div>
+              <div class="deadline">Deadline : 05 Okt 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

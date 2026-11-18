@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7 (1). Halaman menu pengaturan 1</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="app-container sidebar-open" id="appContainer">
+    <header class="top-header centered-title">
+      <h1>Halo, Mahasiswa</h1>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <button class="hamburger-btn" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-list">
+        <a href="dashboard1.html" class="nav-btn">Beranda</a>
+        <a href="tugas1.html" class="nav-btn">Tugas</a>
+        <a href="jadwal1.html" class="nav-btn">Jadwal</a>
+        <a href="kalender1.html" class="nav-btn">Kalender</a>
+        <a href="pengaturan1.html" class="nav-btn active">Pengaturan</a>
+      </nav>
+    </aside>
+
+    <div class="sub-header">
+      <h2>Pengaturan</h2>
+    </div>
+
+    <main class="main-content">
+      <div class="settings-layout">
+        <div class="settings-menu-col">
+          <a href="pengaturan2.html" class="settings-menu-btn">Edit Profile</a>
+          <a href="pengaturan3.html" class="settings-menu-btn">Ganti Password</a>
+          <a href="login.html" class="settings-menu-btn">Logout</a>
+        </div>
+
+        <div class="profile-box-wrapper">
+          <div class="profile-box-title">Profile Mahasiswa</div>
+          <div class="profile-card">
+            <div class="profile-card-top">
+              <div class="avatar-large">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="#ffffff">
+                  <circle cx="12" cy="8" r="4"></circle>
+                  <path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path>
+                </svg>
+              </div>
+              <span>Profile</span>
+            </div>
+            <div class="profile-card-fields">
+              <div class="rect-field-group">
+                <label>Nama Lengkap</label>
+                <input type="text" class="rect-input" id="viewNama" readonly />
+              </div>
+              <div class="rect-field-group">
+                <label>NIM</label>
+                <input type="text" class="rect-input" id="viewNim" readonly />
+              </div>
+              <div class="rect-field-group">
+                <label>Alamat</label>
+                <input type="text" class="rect-input" id="viewAlamat" readonly />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>

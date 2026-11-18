@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6 (1). Halaman menu kalender</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <div class="app-container sidebar-open" id="appContainer">
+    <header class="top-header centered-title">
+      <h1>Halo, Mahasiswa</h1>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <button class="hamburger-btn" title="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="nav-list">
+        <a href="dashboard1.html" class="nav-btn">Beranda</a>
+        <a href="tugas1.html" class="nav-btn">Tugas</a>
+        <a href="jadwal1.html" class="nav-btn">Jadwal</a>
+        <a href="kalender1.html" class="nav-btn active">Kalender</a>
+        <a href="pengaturan1.html" class="nav-btn">Pengaturan</a>
+      </nav>
+    </aside>
+
+    <div class="sub-header">
+      <h2>Kalender</h2>
+    </div>
+
+    <main class="main-content">
+      <div class="calendar-layout">
+        <div class="calendar-card">
+          <div class="calendar-month">October</div>
+          <div class="calendar-grid" id="calendarGrid">
+            <div class="cal-day-name">S</div>
+            <div class="cal-day-name">M</div>
+            <div class="cal-day-name">T</div>
+            <div class="cal-day-name">W</div>
+            <div class="cal-day-name">T</div>
+            <div class="cal-day-name">F</div>
+            <div class="cal-day-name">S</div>
+          </div>
+        </div>
+
+        <div class="agenda-card">
+          <h3>Detail Kegiatan</h3>
+          <div class="agenda-date-sub" id="agendaDateTitle">Senin, 13 Oktober 2026</div>
+          <div class="agenda-inner-box">
+            <div class="timeline-item">
+              <div class="timeline-line"></div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-text">
+                <div>18:00 - 20:30</div>
+                <div>IF104 - Dasar Pemrograman</div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-text">
+                <div>20:30 - 21:20</div>
+                <div>IF104 - Dasar Pemrograman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
